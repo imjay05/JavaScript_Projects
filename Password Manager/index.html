@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">PassX</div>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Password Manager</h1>
+    <p>A password manager securely stores and manages your login credentials, making it easy to access accounts with strong, unique passwords for better online security. It also auto-fills login forms, reduces the risk of forgotten passwords, and protects against phishing attacks. Many support multi-device sync, two-factor authentication, and encrypted storage, enhancing both convenience and safety.</p>
+    <h2>Your Password</h2>
+    <table>
+      <tr>
+        <th>Website</th>
+        <th>USername</th>
+        <th>Password</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+    <h2>Add a Password</h2>
+    <form action="/submir" method="post">
+
+      <!-- text input for website -->
+       <label for="website">Website</label>
+       <input type="text" id="website" name="website" required>
+       <br><br>
+
+       <!-- Text input for username -->
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <!-- password input  -->
+         <label for="password">Password</label>
+         <input type="password" id="password" name="password" required>
+         <br>
+
+         <!-- submit button  -->
+          <button class="btn" type="submit">submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
